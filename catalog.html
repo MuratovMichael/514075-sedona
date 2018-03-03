@@ -2,46 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>HTML Academy: Седона</title>
+    <title>Поиск гостиницы в Седоне</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.png" alt="Логотип города Седона" width="" height="">
+        </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
           <li>
-            <a class="logo" href="index.html">
-              <img src="img/index-logo.png" alt="Логотип города Седона" width="" height="">
-            </a>
+            <a href="info.html">Информация</a>
           </li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li class="current"><a href="hotels.html">Гостиницы</a></li>
+          <li>
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li>
+            <a href="state-map.html">Карта штата</a>
+          </li>
+          <li class="current">
+            <a>Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="content">
       <section class="filters">
-        <div class="infrastructure">
-          <p>Инфраструктура:</p>
-          <!-- Здесь будет форма -->
-        </div>
-        <div class="type">
-          <p>Тип жилья:</p>
-          <!-- Здесь будет форма -->
-        </div>
-        <div class="price">
-          <p>Стоимость в сутки (р):</p>
-          <!-- Здесь будет форма -->
-        </div>
+        <p>Инфраструктура:</p>
+        <p>Тип жилья:</p>
+        <p>Стоимость в сутки (р):</p>
+        <!-- Здесь будет форма -->
       </section>
       <section class="catalog">
-        <h3 class="visually-hidden">Найдено: 3</h3>
+        <h3>Найдено: 3</h3>
         <p>Сортировка:</p>
-        <a class="current" href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По рейтингу</a>
+        <ul>
+          <li>
+            <a class="current" href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <ul class="arrow">
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="amara-hotel.jpg" alt="Amara resort & spa" width="" height="">
@@ -72,17 +86,26 @@
     </main>
     <footer class="main-footer">
       <p>#Visitsedona</p>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-btn" href="#">Твиттер</a></li>
-            <li><a class="social-btn" href="#">Фейсбук</a></li>
-            <li><a class="social-btn" href="#">Ютуб</a></li>
-          </ul>
-          <div class="copyright">
-            <p>Website by</p>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-btn" href="#">Твиттер</a>
+          </li>
+          <li>
+            <a class="social-btn" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-btn" href="#">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="logo-htmlacademy" alt="Логотип HTML Academy" width="" height="">
-          </div>
-        </div>
-      </footer>
+          </a>
+        </p>
+      </div>
+    </footer>
 </body>
 </html>
