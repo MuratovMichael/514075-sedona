@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил Муратов](https://up.htmlacademy.ru/htmlcss/20/user/514075).
-* Наставник: [Максим Нестеренко](https://htmlacademy.ru/profile/nesterenkomacks).
+* Наставник: [Галина Борисова](https://htmlacademy.ru/profile/galina_borisova).
 
 ---
 
