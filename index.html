@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/header-logo.png" alt="Седона" width="138" height="70">
+          <img src="img/header-logo.svg" alt="Седона" width="138" height="70">
         </a>
         <ul class="site-navigation">
           <li>
@@ -38,7 +38,7 @@
           <ol class="features-list">
             <li class="feature-item">
               <h3 class="advantages-text">Настоящий городок</h3>
-              <p>№1</p>
+              <span>№1</span>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               <img src="img/advantages-photo-1.jpg" alt="Настоящий городок" width="800" height="401">
               <ul>
@@ -59,7 +59,7 @@
             <li class="feature-item">
               <img src="img/advantages-photo-2.jpg" alt="Настоящий городок" width="800" height="400">
               <h3 class="advantages-text">Там есть мост дьявола</h3>
-              <p>№2</p>
+              <span>№2</span>
               <p class="advantages-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </li>
             <li class="feature-item">
@@ -69,12 +69,12 @@
             </li>
             <li class="feature-item">
               <h3 class="advantages-text">Красивая дорога</h3>
-              <p>№4</p>
+              <span>№4</span>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="feature-item">
               <h3 class="advantages-text">Красивая дорога</h3>
-              <p>№5</p>
+              <span>№5</span>
               <p class="advantages-description">Большинство едет в гранд каньон и толпится там</p>
             </li>   
           </ol>
@@ -85,20 +85,22 @@
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="#">Поиск гостиниц в Седоне</a>
         <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="appointment-arrival-date">Дата заезда:</label>
-            <input id="appointment-arrival-date" type="text" name="arrival-date">
-          </p>
-          <p>
-            <label for="appointment-departure-date">Дата отъезда:</label>
-            <input id="appointment-departure-date" type="text" name="departure-date">
-          </p>
-          <p>
-            <label for="appointment-adults">Врослые:</label>
-            <input id="appointment-adults" type="text" name="adults">
-            <label for="appointment-children">Дети:</label>
-            <input id="appointment-children" type="text" name="children">
-          </p>
+          <ul>
+            <li>
+              <label for="appointment-arrival-date">Дата заезда:</label>
+              <input id="appointment-arrival-date" type="text" name="arrival-date">
+            </li>
+            <li>
+              <label for="appointment-departure-date">Дата отъезда:</label>
+              <input id="appointment-departure-date" type="text" name="departure-date">
+            </li>
+            <li>
+              <label for="appointment-adults">Врослые:</label>
+              <input id="appointment-adults" type="text" name="adults">
+              <label for="appointment-children">Дети:</label>
+              <input id="appointment-children" type="text" name="children">
+            </li>
+          </ul>
           <a class="button" href="#">Найти</a>
         </form>
       </section>
@@ -111,13 +113,13 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-btn visually-hidden" href="https://twitter.com/?lang=ru">Твиттер</a>
+            <a class="social-btn" href="https://twitter.com/?lang=ru">Твиттер</a>
           </li>
           <li>
-            <a class="social-btn visually-hidden" href="https://ru-ru.facebook.com/">Фейсбук</a>
+            <a class="social-btn" href="https://ru-ru.facebook.com/">Фейсбук</a>
           </li>
           <li>
-            <a class="social-btn visually-hidden" href="https://www.youtube.com/">Ютуб</a>
+            <a class="social-btn" href="https://www.youtube.com/">Ютуб</a>
           </li>
         </ul>
       </div>
