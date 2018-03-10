@@ -29,10 +29,44 @@
     </header>
     <main class="content">
       <section class="filters">
-        <p>Инфраструктура:</p>
-        <p>Тип жилья:</p>
-        <p>Стоимость в сутки (р):</p>
-        <!-- Здесь будет форма -->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+          <p>Инфраструктура:</p>
+          <p>
+            <input id="pool" type="checkbox" name="pool">
+            <label for="pool">Бассейн</label>
+          </p>
+          <p>
+            <input id="parking" type="checkbox" name="parking">
+            <label for="parking">Парковка</label>
+          </p>
+          <p>
+            <input id="wi-fi" type="checkbox" name="wi-fi">
+            <label for="wi-fi">Wi-Fi</label> 
+          </p>
+          <p>Тип жилья:</p>
+          <p>
+            <input id="hotel" type="checkbox" name="hotel">
+            <label for="hotel">Гостиница</label> 
+          </p>
+          <p>
+            <input id="motel" type="checkbox" name="motel">
+            <label for="motel">Мотель</label>
+          </p>
+          <p>
+            <input id="apartaments" type="checkbox" name="apartaments">
+            <label for="apartaments">Апартаменты</label>
+          </p>
+          <p>Стоимость в сутки (Р):</p>
+          <span>от 0</span> <span>до 3000</span>
+          <div>
+            <span></span>
+            <span></span>
+            <button type="button"></button>
+            <button type="button"></button>
+            <br>
+            <button class="button">Показать</button>
+          </div>
+        </form>
       </section>
       <section class="catalog">
         <p>Найдено: 3</p>
@@ -89,13 +123,13 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-btn" href="https://twitter.com/?lang=ru">Твиттер</a>
+            <a class="social-btn visually-hidden" href="https://twitter.com/?lang=ru">Твиттер</a>
           </li>
           <li>
-            <a class="social-btn" href="https://ru-ru.facebook.com/">Фейсбук</a>
+            <a class="social-btn visually-hidden" href="https://ru-ru.facebook.com/">Фейсбук</a>
           </li>
           <li>
-            <a class="social-btn" href="https://www.youtube.com/">Ютуб</a>
+            <a class="social-btn visually-hidden" href="https://www.youtube.com/">Ютуб</a>
           </li>
         </ul>
       </div>
