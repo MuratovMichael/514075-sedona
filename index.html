@@ -84,6 +84,23 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="#">Поиск гостиниц в Седоне</a>
+        <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="appointment-arrival-date">Дата заезда:</label>
+            <input id="appointment-arrival-date" type="text" name="arrival-date">
+          </p>
+          <p>
+            <label for="appointment-departure-date">Дата отъезда:</label>
+            <input id="appointment-departure-date" type="text" name="departure-date">
+          </p>
+          <p>
+            <label for="appointment-adults">Врослые:</label>
+            <input id="appointment-adults" type="text" name="adults">
+            <label for="appointment-children">Дети:</label>
+            <input id="appointment-children" type="text" name="children">
+          </p>
+          <a class="button" href="#">Найти</a>
+        </form>
       </section>
       <section class="map">
         <img src="img/map.jpg" alt="Местонахождение Седоны на карте" width="1200" height="593">
@@ -94,13 +111,13 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-btn" href="https://twitter.com/?lang=ru">Твиттер</a>
+            <a class="social-btn visually-hidden" href="https://twitter.com/?lang=ru">Твиттер</a>
           </li>
           <li>
-            <a class="social-btn" href="https://ru-ru.facebook.com/">Фейсбук</a>
+            <a class="social-btn visually-hidden" href="https://ru-ru.facebook.com/">Фейсбук</a>
           </li>
           <li>
-            <a class="social-btn" href="https://www.youtube.com/">Ютуб</a>
+            <a class="social-btn visually-hidden" href="https://www.youtube.com/">Ютуб</a>
           </li>
         </ul>
       </div>
@@ -115,3 +132,6 @@
     </footer>
   </body>
 </html>
+
+
+
