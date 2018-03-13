@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -35,8 +37,9 @@
       <h1>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
         <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <section class="features">
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="features-list">
-            <li class="feature-item">
+            <li class="feature-item feature-reason">
               <h3 class="advantages-text">Настоящий городок</h3>
               <span>№1</span>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -56,23 +59,23 @@
                 </li>
               </ul>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-reason">
               <img src="img/advantages-photo-2.jpg" alt="Настоящий городок" width="800" height="400">
               <h3 class="advantages-text">Там есть мост дьявола</h3>
               <span>№2</span>
               <p class="advantages-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-reason-item">
               <h3 class="advantages-text">Небольшая площадь</h3>
-              <p class="advantages-text">№3</p>
+              <span>№3</span>
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-reason-item">
               <h3 class="advantages-text">Красивая дорога</h3>
               <span>№4</span>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-reason-item">
               <h3 class="advantages-text">Красивая дорога</h3>
               <span>№5</span>
               <p class="advantages-description">Большинство едет в гранд каньон и толпится там</p>
@@ -81,28 +84,30 @@
         </section>
       </section>
       <section class="appointment">
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#">Поиск гостиниц в Седоне</a>
-        <form class="appointment" action="https://echo.htmlacademy.ru" method="post">
-          <ul>
-            <li>
-              <label for="appointment-arrival-date">Дата заезда:</label>
-              <input id="appointment-arrival-date" type="text" name="arrival-date">
-            </li>
-            <li>
-              <label for="appointment-departure-date">Дата отъезда:</label>
-              <input id="appointment-departure-date" type="text" name="departure-date">
-            </li>
-            <li>
-              <label for="appointment-adults">Врослые:</label>
-              <input id="appointment-adults" type="text" name="adults">
-              <label for="appointment-children">Дети:</label>
-              <input id="appointment-children" type="text" name="children">
-            </li>
-          </ul>
-          <button class="button" type="submit">Найти</button>
-        </form>
+        <div class="center-form">
+          <p>Заинтересовались?</p>
+          <p class="advantages-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a href="#">Поиск гостиниц в Седоне</a>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <ul>
+              <li>
+                <label for="appointment-arrival-date">Дата заезда:</label>
+                <input id="appointment-arrival-date" type="text" name="arrival-date">
+              </li>
+              <li>
+                <label for="appointment-departure-date">Дата отъезда:</label>
+                <input id="appointment-departure-date" type="text" name="departure-date">
+              </li>
+              <li>
+                <label for="appointment-adults">Врослые:</label>
+                <input id="appointment-adults" type="text" name="adults">
+                <label for="appointment-children">Дети:</label>
+                <input id="appointment-children" type="text" name="children">
+              </li>
+            </ul>
+            <button class="button" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
       <section class="map">
         <img src="img/map.jpg" alt="Местонахождение Седоны на карте" width="1200" height="593">
@@ -134,6 +139,4 @@
     </footer>
   </body>
 </html>
-
-
 
