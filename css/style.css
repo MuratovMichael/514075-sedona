@@ -6,6 +6,12 @@ body {
   line-height: 26px;
   color: #333333;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -17,7 +23,7 @@ h1 {
   color: #000000;
 }
 
-h3.advantages-text {
+.advantages-text {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -67,9 +73,33 @@ span {
   list-style: none;
 }
 
-.features-list h3,
-.features-list p {
+.advantages-item-housing {
+  background-image: url(../img/advantages-icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages-item-eat {
+  background-image: url(../img/advantages-icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages-item-souvenirs {
+  background-image: url(../img/advantages-icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-list .advantages-text,
+.features-list .advantages-description {
   text-align: center;
+}
+
+.feature-item > .advantages-text, 
+.feature-item > .advantages-description,
+.feature-item > span {
+  color: #ffffff;
 }
 
 .feature-item span,
@@ -117,6 +147,7 @@ span {
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 34px 140px;
   background-color: #766357;
 }
 
@@ -135,6 +166,7 @@ span {
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
+  padding: 17px 197px 22px 197px;
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
@@ -170,6 +202,34 @@ span {
   font-weight: 700;
 }
 
+.appointment .arrival-date {
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.appointment .departure-date {
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.appointment .adults,
+.appointment .children {
+  background-image: url(../img/plus.png),
+                    url(../img/minus.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right center, left center;
+}
+
+.appointment .minus,
+.appointment .children {
+  background-image: url(../img/plus.png),
+                    url(../img/minus.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right center, left center;
+}
+
 .filters input {
   font: inherit;
 }
@@ -185,6 +245,21 @@ legend {
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.filter-price-form .show-button {
+  font: inherit;
+  width: 133px;
+  height: 32px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+.filter-price-form .show-button:hover {
+  background-color: #ffffff;
 }
 
 /* CATALOG */
