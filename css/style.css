@@ -15,6 +15,7 @@ body {
   background-color: #ffffff;
 }
 
+
 h1 {
   font-family: inherit;
   font-size: 21px;
@@ -41,18 +42,58 @@ span {
 
 /* HEADER */
 
+.main-header {
+  min-height: 564px;
+  margin-bottom: 63px;
+  background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 531px;
+  width: 138px;
+  height: 70px;
+}
+
 .main-navigation {
+  position: relative;
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: gray;
+}
+
+.main-navigation li {
+  width: 239px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+}
+
+.main-navigation li:nth-child(2) {
+  margin-right: auto;
+}
+
+.main-navigation li:nth-child(3) {
+  margin-left: auto;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  min-height: 56px;
+  background-color: #ffffff;
 }
+
 
 .site-navigation a {
   color: #000000;
@@ -66,10 +107,17 @@ span {
   color: #b2b2b2;
 }
 
+.promo {
+  margin-top: 76px;
+  margin-left: 371px;
+}
+
 /* FEATURES */
 
 .features-list,
 .features-list ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -100,6 +148,10 @@ span {
 .feature-item > .advantages-description,
 .feature-item > span {
   color: #ffffff;
+}
+
+.features-list {
+  display: flex;
 }
 
 .feature-item span,
