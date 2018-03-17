@@ -65,7 +65,7 @@ span {
 .main-header {
   position: relative;
   min-height: 564px;
-  margin-bottom: 63px;
+  margin-bottom: 61px;
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -148,7 +148,7 @@ span {
   background-image: url(../img/shape.png);
 }
 
-/* ADVANTAGES */
+/* ADVANTAGES AND FEATURES */
 
 .features img {
   display: block;
@@ -168,19 +168,19 @@ span {
 .advantages-item-housing {
   background-image: url(../img/advantages-icon-1.svg);
   background-repeat: no-repeat;
-  background-position: center 61px;
+  background-position: 170px 61px;
 }
 
 .advantages-item-eat {
   background-image: url(../img/advantages-icon-2.svg);
   background-repeat: no-repeat;
-  background-position: center 61px;
+  background-position: 177px 61px;
 }
 
 .advantages-item-souvenirs {
   background-image: url(../img/advantages-icon-3.svg);
   background-repeat: no-repeat;
-  background-position: center 61px;
+  background-position: 163px 61px;
 }
 
 .advantages-list .advantages-description {
@@ -204,10 +204,16 @@ span {
   flex-direction: column;
 }
 
+.advantages-item {
+  padding-top: 162px;
+  padding-right: 63px;
+  padding-bottom: 85px;
+  padding-left: 73px;
+}
+
 .features ul {
   display: flex;
   justify-content: space-between;
-  min-height: 330px;
 }
 
 .feature-item span,
@@ -221,7 +227,22 @@ span {
 }
 
 .feature-reason {
+  display: flex;
   background-color: #81b3d2;
+}
+
+.feature-reason:first-child {
+  flex-direction: row;
+  min-width: 100%;
+}
+
+.feature-reason:last-child {
+  flex-direction: row-reverse;
+  min-width: 100%;
+}
+
+.block {
+  width: 400px;
 }
 
 .feature-reason-item {
@@ -346,7 +367,6 @@ span {
 
 .filters {
   display: flex;
-  min-height: 217px;
   background-image: url(../img/filter-bg-header.jpg);
   background-repeat: no-repeat;
   background-repeat: no-repeat;
@@ -545,6 +565,11 @@ label {
 
 /* FOOTER */
 
+.main-footer {
+  display: flex;
+  min-height: 120px;
+}
+
 .main-footer p {
   font-family: inherit;
   font-size: 21px;
@@ -552,13 +577,29 @@ label {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  margin-top: 51px;
+  margin-right: 256px;
+  margin-left: 132px;
+}
+
+.footer-social {
+  margin-right: 228px;
 }
 
 .footer-social ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.footer-social a {
+.footer-social li {
+  width: 46px;
+  height: 48px;
+  display: inline-block;
+  background-color: #81b3d2;
+}
+
+.footer-social .social-btn {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -567,11 +608,11 @@ label {
   background-color: #81b3d2;
 }
 
-.footer-social a:hover {
+.footer-social .social-btn:hover {
   background-color: #669ec0;
 }
 
-.footer-social a:active {
+.footer-social .social-btn:active {
   color: #88b6d1;
   background-color: #5496bd;
 }
