@@ -557,17 +557,18 @@ label {
   flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px;
+  padding-bottom: 30px;
   width: 100%;
 }
 
-.info-catalog:first-child {
+.info-catalog {
   display: flex;
-  align-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
-.catalog-ite:nth-child(2) {
-  flex-grow: 2;
+.hotel-name {
+  width: 100%;
 }
 
 .more-btn {
