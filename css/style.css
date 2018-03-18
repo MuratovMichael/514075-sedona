@@ -15,11 +15,6 @@ body {
   background-color: #ffffff;
 }
 
-.inner-container {
-  width: 1056px;
-  margin: 0 auto;
-}
-
 .main-description {
   font-family: inherit;
   font-size: 21px;
@@ -27,7 +22,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .advantages-text {
@@ -73,7 +68,7 @@ span {
 }
 
 .filter-header {
-  min-height: 217px;
+  min-height: 0;
   background-image: none;
 }
 
@@ -150,6 +145,10 @@ span {
 
 /* ADVANTAGES AND FEATURES */
 
+.advantages-list {
+  margin-bottom: 55px;
+}
+
 .features img {
   display: block;
 }
@@ -159,10 +158,6 @@ span {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.advantages-list > .advantages-description {
-  margin-bottom: 55px;
 }
 
 .advantages-item-housing {
@@ -187,14 +182,23 @@ span {
   text-align: center;
 }
 
+.advantages-main-description {
+  margin-bottom: 56px;
+}
+
 .features-list .advantages-text,
 .features-list .advantages-description {
   text-align: center;
 }
 
-.feature-item > .advantages-text, 
-.feature-item > .advantages-description,
-.feature-item > span {
+.features-list .advantages-text,
+.features-list .advantages-description {
+  text-align: center;
+}
+
+.feature-item .advantages-text, 
+.feature-item .advantages-description,
+.feature-item span {
   color: #ffffff;
 }
 
@@ -205,7 +209,7 @@ span {
 }
 
 .advantages-item {
-  padding-top: 162px;
+  padding-top: 164px;
   padding-right: 63px;
   padding-bottom: 85px;
   padding-left: 73px;
@@ -220,10 +224,6 @@ span {
 .advantages-item span {
   display: block;
   text-align: center;
-}
-
-.feature-item {
-  width: 400px;
 }
 
 .feature-reason {
@@ -241,8 +241,9 @@ span {
   min-width: 100%;
 }
 
-.block {
+.feature-description {
   width: 400px;
+  padding: 46px 59px 0 60px;
 }
 
 .feature-reason-item {
@@ -255,7 +256,7 @@ span {
 
 /* APPOINTMENT */
 
-.appointment p {
+.appointment .text-interesting {
   font-family: inherit;
   font-size: 30px;
   font-weight: 700;
@@ -263,61 +264,55 @@ span {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 29px;
 }
 
 .appointment .advantages-description {
   font: inherit;
+  margin-bottom: 50px;
 }
 
-.appointment ul {
-  list-style: none;
-}
-
-.appointment a {
+.appointment .search {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 34px 140px;
+  width: 568px;
+  padding-top: 35px;
+  padding-right: 139px;
+  padding-bottom: 33px;
+  padding-left: 140px;
   background-color: #766357;
 }
 
-.appointment a:hover {
+.appointment .search:hover {
   background-color: #604e43;
 }
 
-.appointment a:active {
+.appointment .search:active {
   color: #857871;
   background-color: #503e33;
 }
 
-.appointment .button {
-  font-family: inherit;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  color: #ffffff;
-  padding: 17px 197px 22px 197px;
-  text-transform: uppercase;
-  background-color: #81b3d2;
-  border: none;
+.appointment-form {
+  position: relative;
+  margin-top: 55px;
 }
 
-.appointment .button:hover {
-  background-color: #669ec0;
-}
-
-.appointment .button:active {
-  color: #88b6d1;
-  background-color: #5496bd;
+.appointment ul {
+  margin: 0;
+  padding: 0;;
+  list-style: none;
 }
 
 .appointment input {
   font-family: inherit;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
+  margin-bottom: 20px;
+  margin-left: 21px;
 }
 
 .appointment input:hover {
@@ -333,43 +328,96 @@ span {
 .appointment label {
   font: inherit;
   font-weight: 700;
+  color: #000000;
 }
 
-.appointment .arrival-date {
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
+.arrival-date,
+.departure-date {
+  padding-top: 14px;
+  padding-right: 230px;
+  padding-bottom: 13px;
+  padding-left: 13px;
 }
 
-.appointment .departure-date {
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
+.calendar-arrival {
+  position: absolute;
+  top: 10px;
+  right: 360px;
+}
+
+.calendar-departure {
+  position: absolute;
+  top: 80px;
+  right: 360px;
 }
 
 .appointment .adults,
 .appointment .children {
-  background-image: url(../img/plus.png),
-                    url(../img/minus.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right center, left center;
+  width: 114px;
+  height: 38px;
+  margin-bottom: 0;
 }
 
-.appointment .minus,
-.appointment .children {
-  background-image: url(../img/plus.png),
-                    url(../img/minus.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right center, left center;
+.minus-adults {
+  position: absolute;
+  top: 140px;
+  left: 590px;
+}
+
+.plus-adults {
+  position: absolute;
+  top: 143px;
+  left: 670px;
+}
+
+.minus-children {
+  position: absolute;
+  top: 185px;
+  left: 575px;
+}
+
+.plus-children {
+  position: absolute;
+  top: 188px;
+  left: 655px;
+}
+
+.appointment .button {
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  width: 458px;
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-right: 197px;
+  padding-bottom: 22px;
+  padding-left: 196px;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.appointment .button:hover {
+  background-color: #669ec0;
+}
+
+.appointment .button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
 /* FILTERS */
 
 .filters {
   display: flex;
+  align-items: center;
   background-image: url(../img/filter-bg-header.jpg);
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
+}
+
+.filter-form {
+  border: none;
 }
 
 .filters ul {
@@ -473,6 +521,11 @@ label {
   margin-bottom: 30px;
 }
 
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-item img {
   margin-right: 30px;
 }
@@ -561,6 +614,8 @@ label {
   height: 27px;
   text-align: center;
   background-color: #f2f2f2;
+  margin-right: 73px;
+  margin-left: auto;
 }
 
 /* FOOTER */
@@ -584,11 +639,13 @@ label {
 
 .footer-social {
   margin-right: 228px;
+  outline: 2px solid red;
 }
 
-.footer-social ul {
+.footer-social {
   margin: 0;
   padding: 0;
+  min-width: 160px;
   list-style: none;
 }
 
@@ -599,7 +656,7 @@ label {
   background-color: #81b3d2;
 }
 
-.footer-social .social-btn {
+.footer-social li .social-btn {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -617,9 +674,17 @@ label {
   background-color: #5496bd;
 }
 
+.social-tw {
+background-image: url(../img/tw.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+
 .copyright p {
   font: inherit;
   color: #000000;
+  width: 241px;
+  margin-left: 200px;
 }
 
 
