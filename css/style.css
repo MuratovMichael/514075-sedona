@@ -60,7 +60,6 @@ span {
 .main-header {
   position: relative;
   min-height: 564px;
-  margin-bottom: 61px;
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -339,9 +338,12 @@ span {
 
 .arrival,
 .departure,
-.adult,
-.childrens {
+.adult-and-children {
   position: relative;
+}
+
+.adult-and-children {
+  margin-bottom: 54px;
 }
 
 .arrival-date,
@@ -374,25 +376,25 @@ span {
 .minus-adults {
   position: absolute;
   top: 5px;
-  left: 600px;
+  left: 510px;
 }
 
 .plus-adults {
   position: absolute;
   top: 8px;
-  left: 680px;
+  left: 590px;
 }
 
 .minus-children {
   position: absolute;
   top: 5px;
-  left: 580px;
+  left: 690px;
 }
 
 .plus-children {
   position: absolute;
   top: 8px;
-  left: 660px;
+  left: 770px;
 }
 
 .appointment .button {
@@ -689,7 +691,6 @@ label {
 
 .footer-social {
   margin-right: 228px;
-  outline: 2px solid red;
 }
 
 .footer-social {
@@ -697,9 +698,14 @@ label {
   padding: 0;
   list-style: none;
   min-width: 160px;
+  margin-top: 36px;
 }
 
 .footer-social li {
+  display: inline-block;
+}
+
+.footer-social .social-btn {
   width: 46px;
   height: 48px;
   display: inline-block;
@@ -725,9 +731,21 @@ label {
 }
 
 .social-tw {
-background-image: url(../img/tw.svg);
-background-repeat: no-repeat;
-background-position: 0 0;
+  background-image: url(../img/tw.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.social-fb {
+  background-image: url(../img/fb.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.social-y {
+  background-image: url(../img/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
 }
 
 .copyright p {
