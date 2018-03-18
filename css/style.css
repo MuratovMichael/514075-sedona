@@ -209,6 +209,13 @@ span {
 }
 
 .advantages-item {
+  padding-top: 50px;
+  padding-right: 63px;
+  padding-bottom: 85px;
+  padding-left: 73px;
+}
+
+.advantages-item.advantages-first {
   padding-top: 164px;
   padding-right: 63px;
   padding-bottom: 85px;
@@ -297,7 +304,6 @@ span {
 }
 
 .appointment-form {
-  position: relative;
   margin-top: 55px;
 }
 
@@ -331,6 +337,13 @@ span {
   color: #000000;
 }
 
+.arrival,
+.departure,
+.adult,
+.childrens {
+  position: relative;
+}
+
 .arrival-date,
 .departure-date {
   padding-top: 14px;
@@ -347,7 +360,7 @@ span {
 
 .calendar-departure {
   position: absolute;
-  top: 80px;
+  top: 10px;
   right: 360px;
 }
 
@@ -360,26 +373,26 @@ span {
 
 .minus-adults {
   position: absolute;
-  top: 140px;
-  left: 590px;
+  top: 5px;
+  left: 600px;
 }
 
 .plus-adults {
   position: absolute;
-  top: 143px;
-  left: 670px;
+  top: 8px;
+  left: 680px;
 }
 
 .minus-children {
   position: absolute;
-  top: 185px;
-  left: 575px;
+  top: 5px;
+  left: 580px;
 }
 
 .plus-children {
   position: absolute;
-  top: 188px;
-  left: 655px;
+  top: 8px;
+  left: 660px;
 }
 
 .appointment .button {
@@ -409,11 +422,23 @@ span {
 
 /* FILTERS */
 
-.filters {
+.filter {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  min-height: 217px;
   background-image: url(../img/filter-bg-header.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 30px;
+}
+
+.filter li {
+  margin-bottom: 32px;
+}
+
+.filter li:last-child {
+  margin-bottom: 0;
 }
 
 .filter-form {
@@ -440,11 +465,17 @@ legend {
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
+  text-align: left;
   text-transform: uppercase;
+  margin-bottom: 28px;
 }
 
 label {
   color: #ffffff;
+}
+
+.filter-price-form {
+  text-align: center;
 }
 
 .filter-price-form .show-button {
@@ -457,6 +488,7 @@ label {
   text-transform: uppercase;
   border: 2px solid #ffffff;
   background-color: transparent;
+  margin-top: 20px;
 }
 
 .filter-price-form .show-button:hover {
@@ -513,17 +545,34 @@ label {
   margin-right: 12px;
 }
 
-.catalog-item {
-  display: flex;
-  align-items: baseline;
-  border-bottom: 1px solid #e5e5e5;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .catalog-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.catalog-item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.info-catalog:first-child {
+  display: flex;
+  align-content: center;
+  width: 100%;
+}
+
+.catalog-ite:nth-child(2) {
+  flex-grow: 2;
+}
+
+.more-btn {
+  margin-right: 6px;
+  margin-left: 30px;
 }
 
 .catalog-item img {
@@ -645,8 +694,8 @@ label {
 .footer-social {
   margin: 0;
   padding: 0;
-  min-width: 160px;
   list-style: none;
+  min-width: 160px;
 }
 
 .footer-social li {
@@ -656,7 +705,7 @@ label {
   background-color: #81b3d2;
 }
 
-.footer-social li .social-btn {
+.footer-social .social-btn {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
