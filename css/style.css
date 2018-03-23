@@ -23,7 +23,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin-top: 61px;
+  margin-top: 60px;
+  margin-bottom: 16px;
 }
 
 .advantages-text {
@@ -32,6 +33,7 @@ body {
   font-weight: 700;
   line-height: 21px;
   color: #000000;
+  padding-left: 45px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -128,6 +130,10 @@ span {
   color: #b2b2b2;
 }
 
+.site-navigation-current a {
+  color: #766357;
+}
+
 .promo {
   margin-top: 76px;
   text-align: center;
@@ -180,10 +186,16 @@ span {
 
 .advantages-list .advantages-description {
   text-align: center;
+  line-height: 22px;
 }
 
 .advantages-main-description {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+}
+
+.features-list .advantages-text {
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 .features-list .advantages-text,
@@ -202,6 +214,10 @@ span {
   color: #ffffff;
 }
 
+.advantages-text {
+  padding-left: 5px;
+}
+
 .advantages-list,
 .features-list {
   display: flex;
@@ -218,8 +234,12 @@ span {
 .advantages-item.advantages-first {
   padding-top: 140px;
   padding-right: 63px;
-  padding-bottom: 62px;
+  padding-bottom: 70px;
   padding-left: 53px;
+}
+
+.advantages-text.one {
+  color: red;
 }
 
 .features ul {
@@ -231,6 +251,7 @@ span {
 .advantages-item span {
   display: block;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .feature-reason {
@@ -250,8 +271,8 @@ span {
 
 .feature-description {
   width: 400px;
-  padding-top: 30px;
-  padding-right: 59px;
+  padding-top: 26px;
+  padding-right: 60px;
   padding-bottom: 0; 
   padding-left: 60px;
 }
@@ -270,7 +291,6 @@ span {
   font-family: inherit;
   font-size: 30px;
   font-weight: 700;
-  line-height: 36px;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -279,7 +299,7 @@ span {
 
 .appointment .advantages-description {
   font: inherit;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .appointment .search {
@@ -289,11 +309,11 @@ span {
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
-  width: 568px;
+  width: 1111px;
   padding-top: 28px;
-  padding-right: 148px;
+  padding-right: 139px;
   padding-bottom: 32px;
-  padding-left: 147px;
+  padding-left: 140px;
   background-color: #766357;
 }
 
@@ -348,6 +368,9 @@ span {
 }
 
 .adult-and-children {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 54px;
 }
 
@@ -368,31 +391,39 @@ span {
 }
 
 .adult-and-children label {
-  margin-right: 42px;
+  margin-right: 26px;
 }
 
 .adult-and-children label:last-of-type {
-  margin-right: 27px;
-  margin-left: 19px;
+  margin-right: 20px;
+  margin-left: 0px;
 }
 
 .calendar-arrival {
   position: absolute;
   top: 8px;
   right: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.calendare-departure:hover path {
+  fill: #81b3d2;
 }
 
 .calendar-departure {
   position: absolute;
   top: 8px;
   right: 15px;
+  border: none;
+  background-color: transparent;
 }
 
 .appointment .adults {
   width: 114px;
   margin-bottom: 0;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 0;
 }
 
 .appointment .children {
@@ -401,28 +432,40 @@ span {
   text-align: center;
 }
 
-.minus-adults {
-  position: absolute;
-  top: 5px;
-  left: 125px;
+.button-minus-adults {
+  width: 12px;
+  height: 3px;
+  border: none;
+  background-image: url(../img/minus.png);
+  background-repeat: no-repeat;
+  background-position: 50px 10px;
 }
 
-.plus-adults {
-  position: absolute;
-  top: 9px;
-  left: 210px;
+.button-plus-adults {
+  width: 11px;
+  height: 11px;
+  border: none;
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: -0px 0px;
 }
 
-.minus-children {
-  position: absolute;
-  top: 5px;
-  right: 100px;
+.button-minus-children {
+  width: 12px;
+  height: 3px;
+  border: none;
+  background-image: url(../img/minus.png);
+  background-repeat: no-repeat;
 }
 
-.plus-children {
-  position: absolute;
-  top: 9px;
-  right: 10px;
+.button-plus-children {
+  width: 11px;
+  height: 11px;
+  border: none;
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .appointment .button {
@@ -439,6 +482,7 @@ span {
   padding-left: 196px;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 }
 
 .appointment .button:hover {
@@ -490,7 +534,7 @@ span {
 }
 
 .filter-form:first-child {
-  width: 261px;
+  width: 257px;
 }
 
 .filter-form:nth-child(2) {
@@ -580,24 +624,28 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .filter-range {
-  width: 300px;
+  width: 320px;
   margin: 0 auto;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-top: -2px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  text-align: left;
 }
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
+  text-align: left;
+  padding-left: 24px;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -616,6 +664,7 @@ input[type="checkbox"]:checked ~ label::after {
 .price-controls input {
   width: 50px;
   margin: 0;
+  margin-right: 30px;
   color: inherit;
   font: inherit;
   background: none;
@@ -626,7 +675,7 @@ input[type="checkbox"]:checked ~ label::after {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -677,7 +726,9 @@ input[type="checkbox"]:checked ~ label::after {
   display: flex;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px;
+  padding-right: 73px;
   padding-bottom: 10px;
+  padding-left: 73px;
 }
 
 .catalog .found {
@@ -688,7 +739,6 @@ input[type="checkbox"]:checked ~ label::after {
   color: #000000;
   margin-right: 46px;
   margin-top: 29px;
-  margin-left: 73px;
 }
 
 .catalog .sorting {
@@ -717,6 +767,24 @@ input[type="checkbox"]:checked ~ label::after {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+
+.arrow-up {
+  background-image: url(../img/icon-up.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 11px;
+  height: 10px;
+  border: none;
+}
+
+.arrow-down {
+  background-image: url(../img/icon-down.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 11px;
+  height: 10px;
+  border: none;
 }
 
 .arrow li:first-child {
@@ -760,7 +828,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .catalog-item img {
   margin-right: 30px;
-  margin-left: 73px;
+  padding-left: 73px;
 }
 
 .catalog ul {
@@ -811,7 +879,7 @@ input[type="checkbox"]:checked ~ label::after {
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-right: 16px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -827,13 +895,17 @@ input[type="checkbox"]:checked ~ label::after {
   background-color: #5496bd;
 }
 
+.rating-info {
+  padding-right: 73px;
+}
+
 .catalog-list .reservation {
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-right: 18px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -854,7 +926,6 @@ input[type="checkbox"]:checked ~ label::after {
   width: 110px;
   height: 27px;
   text-align: center;
-  margin-right: 73px;
   background-color: #f2f2f2;
 }
 
@@ -862,6 +933,7 @@ input[type="checkbox"]:checked ~ label::after {
   background-image: url(../img/star.svg);
   background-repeat: repeat-x;
   padding-bottom: 30px;
+  margin-left: auto;
 }
 
 .data-rating[data-rating="2"] {
@@ -870,6 +942,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .data-rating[data-rating="3"] {
   width: 56px;
+
 }
 
 .data-rating[data-rating="4"] {
@@ -880,6 +953,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .main-footer {
   display: flex;
+  align-items: flex-start;
   min-height: 120px;
 }
 
@@ -899,6 +973,7 @@ input[type="checkbox"]:checked ~ label::after {
   display: flex;
   align-items: flex-start;
   list-style: none;
+  margin-top: 5px;
   margin-right: 90px;
 }
 
@@ -960,6 +1035,7 @@ input[type="checkbox"]:checked ~ label::after {
 .copyright a:active path {
   fill: #bdbbbc;
 }
+
 
 
 
