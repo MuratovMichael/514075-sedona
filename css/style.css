@@ -195,7 +195,7 @@ span {
 
 .features-list .advantages-text {
   padding-right: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding-left: 45px;
 }
 
@@ -233,10 +233,10 @@ span {
 }
 
 .advantages-item.advantages-first {
-  padding-top: 142px;
-  padding-right: 70px;
-  padding-bottom: 69px;
-  padding-left: 40px;
+  padding-top: 139px;
+  padding-right: 50px;
+  padding-bottom: 65px;
+  padding-left: 50px;
 }
 
 .advantages-text.one {
