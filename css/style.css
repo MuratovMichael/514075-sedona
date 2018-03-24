@@ -195,6 +195,7 @@ span {
 
 .features-list .advantages-text {
   padding-right: 45px;
+  margin-bottom: 20px;
   padding-left: 45px;
 }
 
@@ -232,10 +233,10 @@ span {
 }
 
 .advantages-item.advantages-first {
-  padding-top: 140px;
-  padding-right: 63px;
-  padding-bottom: 70px;
-  padding-left: 53px;
+  padding-top: 142px;
+  padding-right: 70px;
+  padding-bottom: 69px;
+  padding-left: 40px;
 }
 
 .advantages-text.one {
@@ -299,7 +300,7 @@ span {
 
 .appointment .advantages-description {
   font: inherit;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 
 .appointment .search {
@@ -341,8 +342,8 @@ span {
   background-color: #f2f2f2;
   margin-bottom: 27px;
   padding-top: 9px;
-  padding-bottom: 9px;
-  width: 280px;
+  padding-bottom: 10px;
+  width: 286px;
 }
 
 .appointment input:hover {
@@ -383,89 +384,102 @@ span {
 }
 
 .arrival label {
-  margin-right: 21px; 
+  margin-right: 17px; 
 }
 
 .departure label {
-  margin-right: 11px; 
+  margin-right: 7px; 
 }
 
 .adult-and-children label {
-  margin-right: 26px;
+  margin-top: 7px;
+  margin-right: 41px;
 }
 
 .adult-and-children label:last-of-type {
   margin-right: 20px;
-  margin-left: 0px;
+  margin-left: 50px;
 }
 
 .calendar-arrival {
   position: absolute;
   top: 8px;
-  right: 15px;
+  right: 5px;
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
-.calendare-departure:hover path {
+.calendare-departure:active path {
   fill: #81b3d2;
 }
 
 .calendar-departure {
   position: absolute;
   top: 8px;
-  right: 15px;
+  right: 5px;
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
 .appointment .adults {
-  width: 114px;
+  width: 38px;
+  height: 15px;
   margin-bottom: 0;
   text-align: center;
   margin-right: 0;
 }
 
 .appointment .children {
-  width: 114px;
+  width: 38px;
+  height: 15px;
   margin-bottom: 0;
   text-align: center;
 }
 
 .button-minus-adults {
-  width: 12px;
-  height: 3px;
+  width: 38px;
+  height: 38px;
   border: none;
+  cursor: pointer;
   background-image: url(../img/minus.png);
   background-repeat: no-repeat;
-  background-position: 50px 10px;
+  background-position: 13px 18px;
+  background-color: #f2f2f2;
 }
 
 .button-plus-adults {
-  width: 11px;
-  height: 11px;
+  width: 38px;
+  height: 38px;
   border: none;
+  cursor: pointer;
   background-image: url(../img/plus.png);
   background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: -0px 0px;
+  background-position: 13px 14px;
+  background-color: #f2f2f2;
 }
 
 .button-minus-children {
-  width: 12px;
-  height: 3px;
+  width: 38px;
+  height: 38px;
   border: none;
+  cursor: pointer;
   background-image: url(../img/minus.png);
   background-repeat: no-repeat;
+  background-position: 13px 18px;
+  background-color: #f2f2f2
 }
 
 .button-plus-children {
-  width: 11px;
-  height: 11px;
+  width: 38px;
+  height: 38px;
   border: none;
+  cursor: pointer;
   background-image: url(../img/plus.png);
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-position: 13px 14px;
+  background-color: #f2f2f2;
 }
 
 .appointment .button {
@@ -492,6 +506,16 @@ span {
 .appointment .button:active {
   color: #88b6d1;
   background-color: #5496bd;
+}
+
+.calendar-arrival:hover path,
+.calendar-departure:hover path {
+  fill: #000000;
+}
+
+.calendar-arrival:active path,
+.calendar-departure:active path {
+  fill: #81b3d2;
 }
 
 .modal-search {
@@ -768,7 +792,7 @@ input[type="checkbox"]:checked ~ label::after {
   align-items: center;
   margin-left: auto;
 }
-
+/*
 .arrow-up {
   background-image: url(../img/icon-up.svg);
   background-repeat: no-repeat;
@@ -785,6 +809,23 @@ input[type="checkbox"]:checked ~ label::after {
   width: 11px;
   height: 10px;
   border: none;
+}
+*/
+
+.arrow-up,
+.arrow-down {
+  border: none;
+  background-color: transparent;
+}
+
+.arrow-up:hover path,
+.arrow-down:hover path {
+  fill: #000000;
+}
+
+.arrow-up:active path,
+.arrow-down:active path {
+  fill: #81b3d2;
 }
 
 .arrow li:first-child {
@@ -953,8 +994,9 @@ input[type="checkbox"]:checked ~ label::after {
 
 .main-footer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   min-height: 120px;
+  border-top: 1px solid red;
 }
 
 .main-footer p {
@@ -967,14 +1009,15 @@ input[type="checkbox"]:checked ~ label::after {
   margin-top: 13px;
   margin-right: 217px;
   margin-left: 132px;
+  width: 33,33%;
 }
 
 .footer-social {
   display: flex;
   align-items: flex-start;
   list-style: none;
-  margin-top: 5px;
   margin-right: 90px;
+  width: 33,33%;
 }
 
 .footer-social li {
@@ -1016,6 +1059,10 @@ input[type="checkbox"]:checked ~ label::after {
 
 .social-btn:active path {
   fill: #88b6d1;
+}
+
+.copyright {
+  width: 33,33%;
 }
 
 .copyright p {
