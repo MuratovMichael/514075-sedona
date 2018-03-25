@@ -1036,24 +1036,25 @@ input[type="checkbox"]:checked ~ label::after {
 .main-footer {
   display: flex;
   align-items: center;
-  min-height: 80px;
+  justify-content: space-between;
+  min-height: 120px;
+  text-align: center;
   background-color: #ffffff;
 }
-
+/*
 .absolute-footer {
   position: absolute;
+  z-index: 1;
   display: flex;
   align-items: center;
   bottom: 0;
   width: 100%;
   min-height: 120px;
-  background-color: rgba(249, 251, 246, 0.9);
+  opacity: 0.9;
 }
-
+*/
 .visitsedona {
   width: 33.33%;
-  margin-top: -5px;
-  margin-right: 216px;
 }
 
 .main-footer p {
@@ -1062,15 +1063,14 @@ input[type="checkbox"]:checked ~ label::after {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-  margin-left: 132px;
 }
 
 .footer-social {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   list-style: none;
   width: 33.33%;
-  margin-top: 6px;
 }
 
 .footer-social li {
@@ -1116,18 +1116,12 @@ input[type="checkbox"]:checked ~ label::after {
 
 .copyright {
   width: 33.33%;
-  margin-top: 5px;
-  margin-right: 101px;
 }
 
-.copyright p {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.copyright span {
   font: inherit;
   color: #000000;
   width: 200px;
-  margin-top: 3px;
 }
 
 .copyright a:hover path,
