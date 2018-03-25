@@ -158,6 +158,31 @@ span {
 
 /* ADVANTAGES AND FEATURES */
 
+/*
+.features-list span {
+  position: relative;
+}
+
+.features-list span::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 116px;
+  width: 8px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.features-list span::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 156px;
+  width: 8px;
+  height: 2px;
+  background-color: #ffffff;
+}
+*/
 .advantages-list {
   margin-bottom: 55px;
 }
@@ -236,7 +261,7 @@ span {
   width: 33.33%;
   padding-top: 25px;
   padding-right: 63px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   padding-left: 62px;
 }
 
@@ -861,7 +886,7 @@ input[type="checkbox"]:checked ~ label::after {
   flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px;
-  padding-bottom: 29px;
+  padding-bottom: 15px;
   width: 100%;
 }
 
@@ -990,20 +1015,20 @@ input[type="checkbox"]:checked ~ label::after {
 .data-rating {
   background-image: url(../img/star.svg);
   background-repeat: repeat-x;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   margin-left: auto;
 }
 
 .data-rating[data-rating="2"] {
-  width: 38px;
+  width: 44px;
 }
 
 .data-rating[data-rating="3"] {
-  width: 56px;
+  width: 66px;
 }
 
 .data-rating[data-rating="4"] {
-  width: 74px;
+  width: 90px;
 }
 
 /* FOOTER */
@@ -1011,20 +1036,24 @@ input[type="checkbox"]:checked ~ label::after {
 .main-footer {
   display: flex;
   align-items: center;
+  min-height: 80px;
+  background-color: #ffffff;
+}
+
+.absolute-footer {
   position: absolute;
+  display: flex;
+  align-items: center;
   bottom: 0;
   width: 100%;
   min-height: 120px;
   background-color: rgba(249, 251, 246, 0.9);
 }
 
-.inner-page .main-footer {
-  
-}
-
 .visitsedona {
   width: 33.33%;
-  margin-right: 255px;
+  margin-top: -5px;
+  margin-right: 216px;
 }
 
 .main-footer p {
@@ -1041,6 +1070,7 @@ input[type="checkbox"]:checked ~ label::after {
   align-items: flex-start;
   list-style: none;
   width: 33.33%;
+  margin-top: 6px;
 }
 
 .footer-social li {
@@ -1086,6 +1116,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .copyright {
   width: 33.33%;
+  margin-top: 5px;
   margin-right: 101px;
 }
 
