@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +17,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  min-height: 100%;
+  position: relative;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.20);
 }
@@ -227,10 +234,10 @@ span {
 
 .advantages-item {
   width: 33.33%;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-right: 63px;
   padding-bottom: 40px;
-  padding-left: 73px;
+  padding-left: 62px;
 }
 
 .advantages-item.advantages-first {
@@ -273,6 +280,14 @@ span {
   padding-right: 60px;
   padding-bottom: 0; 
   padding-left: 60px;
+}
+
+.feature-description:last-child {
+  width: 400px;
+  padding-top: 26px;
+  padding-right: 45px;
+  padding-bottom: 0; 
+  padding-left: 45px;
 }
 
 .feature-reason-item {
@@ -337,10 +352,10 @@ span {
   text-transform: uppercase;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   padding-top: 9px;
   padding-bottom: 10px;
-  width: 286px;
+  width: 294px;
 }
 
 .appointment input:hover {
@@ -394,14 +409,14 @@ span {
 }
 
 .adult-and-children label:last-of-type {
-  margin-right: 20px;
+  margin-right: 28px;
   margin-left: 50px;
 }
 
 .calendar-arrival {
   position: absolute;
   top: 8px;
-  right: 5px;
+  right: 18px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -414,7 +429,7 @@ span {
 .calendar-departure {
   position: absolute;
   top: 8px;
-  right: 5px;
+  right: 18px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -487,9 +502,9 @@ span {
   color: #ffffff;
   width: 458px;
   text-transform: uppercase;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-right: 197px;
-  padding-bottom: 22px;
+  padding-bottom: 18px;
   padding-left: 196px;
   background-color: #81b3d2;
   border: none;
@@ -506,22 +521,26 @@ span {
 }
 
 .calendar-arrival:hover path,
-.calendar-departure:hover path {
+.calendar-departure:hover path,
+.calendar-arrival:hover rect,
+.calendar-departure:hover rect {
   fill: #000000;
 }
 
 .calendar-arrival:active path,
-.calendar-departure:active path {
+.calendar-departure:active path,
+.calendar-arrival:active rect,
+.calendar-departure:active rect {
   fill: #81b3d2;
 }
 
 .modal-search {
-  width: 450px;
+  width: 470px;
   background-color: #ffffff;
   text-align: left;
-  outline: 1px solid red;
   margin: 30px auto;
-  padding: 53px 58px 58px 58px;
+  padding: 56px 40px 58px 58px;
+  background-color: #ffffff;
 }
 
 /* MAP */
@@ -531,6 +550,10 @@ span {
   height: 473px;
   margin: 0 auto;
   display: none;
+}
+
+iframe {
+  border: none;
 }
 
 /* FILTERS */
@@ -636,7 +659,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .show-button {
   display: block;
-  margin: 0 auto;
+  margin-left: 84px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
@@ -785,6 +808,16 @@ input[type="checkbox"]:checked ~ label::after {
   align-items: center;
 }
 
+.catalog-price li .catalog-current {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.catalog-price li:hover .catalog-current {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
 .catalog-price li {
   margin-right: 33px;
 }
@@ -798,29 +831,11 @@ input[type="checkbox"]:checked ~ label::after {
   align-items: center;
   margin-left: auto;
 }
-/*
-.arrow-up {
-  background-image: url(../img/icon-up.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  width: 11px;
-  height: 10px;
-  border: none;
-}
-
-.arrow-down {
-  background-image: url(../img/icon-down.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  width: 11px;
-  height: 10px;
-  border: none;
-}
-*/
 
 .arrow-up,
 .arrow-down {
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -832,10 +847,6 @@ input[type="checkbox"]:checked ~ label::after {
 .arrow-up:active path,
 .arrow-down:active path {
   fill: #81b3d2;
-}
-
-.arrow li:first-child {
-  margin-right: 12px;
 }
 
 .catalog-list {
@@ -989,7 +1000,6 @@ input[type="checkbox"]:checked ~ label::after {
 
 .data-rating[data-rating="3"] {
   width: 56px;
-
 }
 
 .data-rating[data-rating="4"] {
@@ -1001,8 +1011,20 @@ input[type="checkbox"]:checked ~ label::after {
 .main-footer {
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   min-height: 120px;
-  border-top: 1px solid red;
+  background-color: rgba(249, 251, 246, 0.9);
+}
+
+.inner-page .main-footer {
+  
+}
+
+.visitsedona {
+  width: 33.33%;
+  margin-right: 255px;
 }
 
 .main-footer p {
@@ -1011,18 +1033,13 @@ input[type="checkbox"]:checked ~ label::after {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
-  margin-top: 13px;
-  margin-right: 217px;
   margin-left: 132px;
-  width: 33.33%;
 }
 
 .footer-social {
   display: flex;
   align-items: flex-start;
   list-style: none;
-  margin-right: 90px;
   width: 33.33%;
 }
 
@@ -1069,6 +1086,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .copyright {
   width: 33.33%;
+  margin-right: 101px;
 }
 
 .copyright p {
@@ -1081,13 +1099,17 @@ input[type="checkbox"]:checked ~ label::after {
   margin-top: 3px;
 }
 
-.copyright a:hover path {
-  fill: #81b3d2;
+.copyright a:hover path,
+.copyright a:hover rect {
+  fill: #81b3d2; 
 }
 
-.copyright a:active path {
+.copyright a:active path,
+.copyright a:active rect {
   fill: #bdbbbc;
 }
+
+
 
 
 
