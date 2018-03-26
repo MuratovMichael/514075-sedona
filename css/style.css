@@ -337,7 +337,7 @@ span {
 
 .appointment .advantages-description {
   font: inherit;
-  margin-bottom: 75px;
+  margin-bottom: 74px;
 }
 
 .appointment .search {
@@ -379,8 +379,8 @@ span {
   background-color: #f2f2f2;
   margin-bottom: 29px;
   padding-top: 9px;
-  padding-bottom: 10px;
-  width: 294px;
+  padding-bottom: 9px;
+  width: 293px;
 }
 
 .appointment input:hover {
@@ -421,27 +421,27 @@ span {
 }
 
 .arrival label {
-  margin-right: 17px; 
+  margin-right: 18px; 
 }
 
 .departure label {
-  margin-right: 7px; 
+  margin-right: 15px; 
 }
 
 .adult-and-children label {
   margin-top: 7px;
-  margin-right: 41px;
+  margin-right: 42px;
 }
 
 .adult-and-children label:last-of-type {
   margin-right: 28px;
-  margin-left: 50px;
+  margin-left: 52px;
 }
 
 .calendar-arrival {
   position: absolute;
-  top: 8px;
-  right: 18px;
+  top: 7px;
+  right: 16px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -453,24 +453,24 @@ span {
 
 .calendar-departure {
   position: absolute;
-  top: 8px;
-  right: 18px;
+  top: 7px;
+  right: 16px;
   border: none;
   cursor: pointer;
   background-color: transparent;
 }
 
 .appointment .adults {
-  width: 38px;
-  height: 15px;
+  width: 35px;
+  height: 16px;
   margin-bottom: 0;
   text-align: center;
   margin-right: 0;
 }
 
 .appointment .children {
-  width: 38px;
-  height: 15px;
+  width: 35px;
+  height: 16px;
   margin-bottom: 0;
   text-align: center;
 }
@@ -564,7 +564,7 @@ span {
   background-color: #ffffff;
   text-align: left;
   margin: 30px auto;
-  padding: 56px 40px 58px 58px;
+  padding: 53px 40px 58px 55px;
   background-color: #ffffff;
 }
 
@@ -1037,22 +1037,22 @@ input[type="checkbox"]:checked ~ label::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 120px;
+  padding-top: 18px;
+  padding-bottom: 37px;
   text-align: center;
   background-color: #ffffff;
 }
-/*
+
 .absolute-footer {
   position: absolute;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  bottom: 0;
   width: 100%;
-  min-height: 120px;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: 0.9;
 }
-*/
+
 .visitsedona {
   width: 33.33%;
 }
@@ -1070,7 +1070,8 @@ input[type="checkbox"]:checked ~ label::after {
   align-items: flex-start;
   justify-content: center;
   list-style: none;
-  width: 33.33%;
+  max-width: 33.33%;
+  padding-left: 33px;
 }
 
 .footer-social li {
@@ -1115,13 +1116,18 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .copyright {
+  margin-top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 33.33%;
 }
 
 .copyright span {
   font: inherit;
   color: #000000;
-  width: 200px;
+  margin-right: 7px;
+  margin-top: 7px;
 }
 
 .copyright a:hover path,
@@ -1133,6 +1139,8 @@ input[type="checkbox"]:checked ~ label::after {
 .copyright a:active rect {
   fill: #bdbbbc;
 }
+
+
 
 
 
