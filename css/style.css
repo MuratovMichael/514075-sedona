@@ -325,6 +325,10 @@ span {
 
 /* APPOINTMENT */
 
+.appointment {
+  position: relative;
+}
+
 .appointment .text-interesting {
   font-family: inherit;
   font-size: 30px;
@@ -337,17 +341,20 @@ span {
 
 .appointment .advantages-description {
   font: inherit;
-  margin-bottom: 74px;
+  margin-bottom: 44px;
 }
 
-.appointment .search {
+.appointment .modal-button {
+  position: relative;
+  z-index: 3;
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
-  width: 1111px;
+  border: none;
+  cursor: pointer;
   padding-top: 28px;
   padding-right: 139px;
   padding-bottom: 32px;
@@ -355,11 +362,11 @@ span {
   background-color: #766357;
 }
 
-.appointment .search:hover {
+.appointment .modal-button:hover {
   background-color: #604e43;
 }
 
-.appointment .search:active {
+.appointment .modal-button:active {
   color: #857871;
   background-color: #503e33;
 }
@@ -377,7 +384,7 @@ span {
   text-transform: uppercase;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding-top: 9px;
   padding-bottom: 9px;
   width: 293px;
@@ -441,7 +448,7 @@ span {
 .calendar-arrival {
   position: absolute;
   top: 7px;
-  right: 16px;
+  right: 22px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -454,7 +461,7 @@ span {
 .calendar-departure {
   position: absolute;
   top: 7px;
-  right: 16px;
+  right: 22px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -519,7 +526,7 @@ span {
   background-color: #f2f2f2;
 }
 
-.appointment .button {
+.appointment .search-button {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -536,11 +543,11 @@ span {
   cursor: pointer;
 }
 
-.appointment .button:hover {
+.appointment .search-button:hover {
   background-color: #669ec0;
 }
 
-.appointment .button:active {
+.appointment .search-button:active {
   color: #88b6d1;
   background-color: #5496bd;
 }
@@ -560,12 +567,64 @@ span {
 }
 
 .modal-search {
-  width: 470px;
+  position: absolute;
+  z-index: 1;
+  top: 206px;
+  left: 315px;
+  width: 475px;
   background-color: #ffffff;
   text-align: left;
+  display: block;
   margin: 30px auto;
-  padding: 53px 40px 58px 55px;
+  padding-top: 55px;
+  padding-right: 36px;
+  padding-bottom: 58px;
+  padding-left: 58px;
   background-color: #ffffff;
+}
+
+.modal-close {
+  display: none;
+}
+
+@keyframes modal-show {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-error {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%, 
+  30%,
+  50%,
+  70% {
+    transform: translateX(10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-10px);
+  }
+}
+
+.modal-show {
+  animation-name: modal-show;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  transform: translateX(-1200px);
+}
+
+.modal-error {
+  animation-name: modal-error;
+  animation-duration: 0.5s;
 }
 
 /* MAP */
@@ -579,6 +638,8 @@ span {
 
 iframe {
   border: none;
+  width: 1200px;
+  height: 593px;
 }
 
 /* FILTERS */
@@ -676,6 +737,17 @@ input[type="checkbox"]:checked ~ label::after {
   border-right: none;
   transform: rotate(-45deg);
 }
+
+/*
+input[type="checkbox"]:disabled ~ label:before,
+input[type="checkbox"]:disabled ~ label::after {
+  border-color: #6a6a6a;
+}
+
+input[type="checkbox"]:disabled ~ label {
+  color: #6a6a6a;
+}
+*/
 
 .filter-price-form {
   width: 330px;
