@@ -29,7 +29,7 @@ body {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin-top: 60px;
   margin-bottom: 16px;
 }
@@ -39,7 +39,7 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   padding-left: 45px;
 }
 
@@ -493,6 +493,14 @@ span {
   background-color: #f2f2f2;
 }
 
+.button-minus-adults:hover {
+  background-image: url(../img/minus-hover.png);
+}
+
+.button-minus-adults:active {
+  background-image: url(../img/minus-active.png);
+}
+
 .button-plus-adults {
   width: 38px;
   height: 38px;
@@ -502,6 +510,14 @@ span {
   background-repeat: no-repeat;
   background-position: 13px 14px;
   background-color: #f2f2f2;
+}
+
+.button-plus-adults:hover {
+  background-image: url(../img/plus-hover.png);
+}
+
+.button-plus-adults:active {
+  background-image: url(../img/plus-active.png);
 }
 
 .button-minus-children {
@@ -515,6 +531,14 @@ span {
   background-color: #f2f2f2
 }
 
+.button-minus-children:hover {
+  background-image: url(../img/minus-hover.png);
+}
+
+.button-minus-children:active {
+  background-image: url(../img/minus-active.png);
+}
+
 .button-plus-children {
   width: 38px;
   height: 38px;
@@ -524,6 +548,14 @@ span {
   background-repeat: no-repeat;
   background-position: 13px 14px;
   background-color: #f2f2f2;
+}
+
+.button-plus-children:hover {
+  background-image: url(../img/plus-hover.png);
+}
+
+.button-plus-children:active {
+  background-image: url(../img/plus-active.png);
 }
 
 .appointment .search-button {
@@ -650,7 +682,7 @@ iframe {
   justify-content: flex-start;
   background-image: url(../img/filter-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   padding-top: 30px;
   padding-right: 73px;
   padding-left: 73px;
@@ -757,7 +789,7 @@ input[type="checkbox"]:disabled ~ label {
 .show-button {
   display: block;
   margin-left: 84px;
-  padding: 6px 35px;
+  padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -817,9 +849,14 @@ input[type="checkbox"]:disabled ~ label {
   margin-right: 30px;
   color: inherit;
   font: inherit;
+  font-size: 14px;
   background: none;
   border: none;
-  padding-left: 5px;
+  line-height: 18px;
+}
+
+.price-controls input:first-child {
+  padding-left: 4px;
 }
 
 .price-controls label {
@@ -828,6 +865,10 @@ input[type="checkbox"]:disabled ~ label {
   line-height: 32px;
   vertical-align: top;
   cursor: pointer;
+}
+
+.max-price {
+  padding-right: 4px;
 }
 
 .range-controls {
@@ -926,6 +967,7 @@ input[type="checkbox"]:disabled ~ label {
 .catalog .arrow {
   display: flex;
   align-items: center;
+  margin-right: -6px;
   margin-left: auto;
 }
 
@@ -934,6 +976,18 @@ input[type="checkbox"]:disabled ~ label {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.arrow-up:focus,
+.arrow-down:focus {
+  outline: none;
+}
+
+.arrow-up:focus,
+.arrow-up:active,
+.arrow-down:focus,
+.arrow-down:active {
+  border: 1px solid lightblue;
 }
 
 .arrow-up:hover path,
@@ -974,11 +1028,11 @@ input[type="checkbox"]:disabled ~ label {
 
 .more-btn {
   margin-right: 6px;
-  margin-top: -29px;
+  margin-top: -30px;
 }
 
 .reserve-btn {
-  margin-top: -29px;
+  margin-top: -30px;
 }
 
 .catalog-item img {
@@ -1034,9 +1088,9 @@ input[type="checkbox"]:disabled ~ label {
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 6px;
-  padding-right: 16px;
-  padding-bottom: 3px;
+  padding-top: 4px;
+  padding-right: 17px;
+  padding-bottom: 4px;
   padding-left: 16px;
   background-color: #81b3d2;
 }
@@ -1060,10 +1114,10 @@ input[type="checkbox"]:disabled ~ label {
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 6px;
-  padding-right: 18px;
-  padding-bottom: 3px;
-  padding-left: 16px;
+  padding-top: 4px;
+  padding-right: 17px;
+  padding-bottom: 4px;
+  padding-left: 18px;
   background-color: #766357;
 }
 
@@ -1211,6 +1265,11 @@ input[type="checkbox"]:disabled ~ label {
 .copyright a:active rect {
   fill: #bdbbbc;
 }
+
+.copyright svg {
+  pointer-events: none;
+}
+
 
 
 
