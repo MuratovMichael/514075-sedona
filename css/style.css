@@ -1099,7 +1099,7 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .data-rating {
-  background-image: url(../img/);
+  background-image: url(../img/star.svg);
   background-repeat: repeat-x;
   padding-bottom: 50px;
   margin-left: auto;
