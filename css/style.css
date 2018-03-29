@@ -20,7 +20,8 @@ body {
   min-height: 100%;
   position: relative;
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 1, 1, 0.20);
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.20);
+          box-shadow: 0 0 15px rgba(0, 1, 1, 0.20);
 }
 
 .main-description {
@@ -119,8 +120,14 @@ span {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -142,6 +149,10 @@ span {
 
 .site-navigation-current a {
   color: #766357;
+}
+
+.hotel {
+  padding-left: 15px;
 }
 
 .promo {
@@ -231,8 +242,13 @@ span {
 
 .advantages-list,
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .advantages-item {
@@ -251,8 +267,12 @@ span {
 }
 
 .features ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .feature-item span,
@@ -263,17 +283,25 @@ span {
 }
 
 .feature-reason {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #81b3d2;
 }
 
 .feature-reason:first-child {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   min-width: 100%;
 }
 
 .feature-reason:last-child {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   min-width: 100%;
 }
 
@@ -391,9 +419,15 @@ span {
 }
 
 .adult-and-children {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 54px;
 }
 
@@ -579,13 +613,14 @@ span {
 .modal-search {
   position: absolute;
   z-index: 1;
-  top: 206px;
+  top: 0;
   left: 315px;
   width: 475px;
   background-color: #ffffff;
   text-align: left;
   display: block;
   margin: 30px auto;
+  margin-top: 0;
   padding-top: 55px;
   padding-right: 36px;
   padding-bottom: 54px;
@@ -593,48 +628,97 @@ span {
   background-color: #ffffff;
 }
 
+.popup {
+  position: relative;
+}
+
 .modal-close {
   display: none;
 }
 
-@keyframes modal-show {
+@-webkit-keyframes modal-show {
   0% {
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes modal-show {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes modal-error {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 }
 
 @keyframes modal-error {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 
   30%,
   50%,
   70% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 }
 
 .modal-show {
-  animation-name: modal-show;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
-  transform: translateX(-1200px);
+  -webkit-animation-name: modal-show;
+          animation-name: modal-show;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: translateX(-1200px);
+      -ms-transform: translateX(-1200px);
+          transform: translateX(-1200px);
 }
 
 .modal-error {
-  animation-name: modal-error;
-  animation-duration: 0.5s;
+  -webkit-animation-name: modal-error;
+          animation-name: modal-error;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 /* MAP */
@@ -655,9 +739,15 @@ iframe {
 /* FILTERS */
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #4178a1;
   background-image: url(../img/filter-bg.jpg);
   background-repeat: no-repeat;
@@ -746,7 +836,9 @@ input[type="checkbox"]:checked ~ label::after {
   border: 4px solid #ffffff;
   border-top: none;
   border-right: none;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .filter-price-form {
@@ -808,7 +900,9 @@ input[type="checkbox"]:checked ~ label::after {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls input {
@@ -821,6 +915,10 @@ input[type="checkbox"]:checked ~ label::after {
   background: none;
   border: none;
   line-height: 18px;
+}
+
+.price-controls input {
+  margin-right: 20px;
 }
 
 .price-controls input:first-child {
@@ -836,7 +934,7 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .price-controls label:last-child {
-  margin-left: 7px;
+  margin-left: 17px;
 }
 
 .range-controls {
@@ -863,7 +961,8 @@ input[type="checkbox"]:checked ~ label::after {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -882,6 +981,8 @@ input[type="checkbox"]:checked ~ label::after {
 /* CATALOG */
 
 .catalog-flex-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px;
@@ -910,8 +1011,12 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .catalog-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .catalog-price li .catalog-current {
@@ -933,8 +1038,12 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .catalog .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: -6px;
   margin-left: auto;
 }
@@ -957,15 +1066,27 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 30px;
   padding-bottom: 15px;
@@ -977,9 +1098,14 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .info-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .hotel-name {
@@ -1120,9 +1246,15 @@ input[type="checkbox"]:checked ~ label::after {
 /* FOOTER */
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 0px;
   padding-bottom: 30px;
   text-align: center;
@@ -1154,9 +1286,15 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   max-width: 33.33%;
   padding-left: 4px;
@@ -1172,8 +1310,11 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding-top: 5px;
   padding-left: 30px;
@@ -1182,9 +1323,15 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .footer-social .social-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -1210,9 +1357,15 @@ input[type="checkbox"]:checked ~ label::after {
 
 .copyright {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 33.33%;
 }
 
@@ -1236,7 +1389,6 @@ input[type="checkbox"]:checked ~ label::after {
 .copyright svg {
   pointer-events: none;
 }
-
 
 
 
