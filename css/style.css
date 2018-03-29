@@ -255,11 +255,6 @@ span {
   justify-content: space-between;
 }
 
-.feature-description:last-child .advantages-text {
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
 .feature-item span,
 .advantages-item span {
   display: block;
@@ -988,6 +983,10 @@ input[type="checkbox"]:disabled ~ label {
   width: 100%;
 }
 
+.catalog-item:last-child {
+  margin-bottom: 20px;
+}
+
 .info-catalog {
   display: flex;
   flex-wrap: wrap;
@@ -1172,6 +1171,10 @@ input[type="checkbox"]:disabled ~ label {
   list-style: none;
   max-width: 33.33%;
   padding-left: 4px;
+}
+
+.absolute-social {
+  padding-top: 2px;
 }
 
 .footer-social li {
