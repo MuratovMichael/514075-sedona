@@ -32,6 +32,8 @@ body {
   color: #333333;
   margin-top: 60px;
   margin-bottom: 16px;
+  padding-left: 290px;
+  padding-right: 290px;
 }
 
 .advantages-text {
@@ -70,6 +72,7 @@ span {
 .main-header {
   position: relative;
   min-height: 564px;
+  background-color: #e0eef7;
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
   background-position: center -27px;
@@ -158,31 +161,6 @@ span {
 
 /* ADVANTAGES AND FEATURES */
 
-/*
-.features-list span {
-  position: relative;
-}
-
-.features-list span::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 116px;
-  width: 8px;
-  height: 2px;
-  background-color: #ffffff;
-}
-
-.features-list span::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 156px;
-  width: 8px;
-  height: 2px;
-  background-color: #ffffff;
-}
-*/
 .advantages-list {
   margin-bottom: 55px;
 }
@@ -226,9 +204,9 @@ span {
 }
 
 .features-list .advantages-text {
-  padding-right: 45px;
-  margin-bottom: 22px;
-  padding-left: 45px;
+  padding-right: 60px;
+  margin-bottom: 23px;
+  padding-left: 60px;
 }
 
 .features-list .advantages-text,
@@ -268,7 +246,7 @@ span {
 .advantages-item.advantages-first {
   padding-top: 140px;
   padding-right: 50px;
-  padding-bottom: 69px;
+  padding-bottom: 68px;
   padding-left: 50px;
 }
 
@@ -277,11 +255,16 @@ span {
   justify-content: space-between;
 }
 
+.feature-description:last-child .advantages-text {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .feature-item span,
 .advantages-item span {
   display: block;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .feature-reason {
@@ -447,8 +430,8 @@ span {
 
 .calendar-arrival {
   position: absolute;
-  top: 7px;
-  right: 22px;
+  top: 8px;
+  right: 28px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -461,7 +444,7 @@ span {
 .calendar-departure {
   position: absolute;
   top: 7px;
-  right: 22px;
+  right: 28px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -610,7 +593,7 @@ span {
   margin: 30px auto;
   padding-top: 55px;
   padding-right: 36px;
-  padding-bottom: 58px;
+  padding-bottom: 54px;
   padding-left: 58px;
   background-color: #ffffff;
 }
@@ -680,9 +663,10 @@ iframe {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  background-color: #4178a1;
   background-image: url(../img/filter-bg.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 16%;
   padding-top: 30px;
   padding-right: 73px;
   padding-left: 73px;
@@ -770,7 +754,7 @@ input[type="checkbox"]:checked ~ label::after {
   transform: rotate(-45deg);
 }
 
-/*
+
 input[type="checkbox"]:disabled ~ label:before,
 input[type="checkbox"]:disabled ~ label::after {
   border-color: #6a6a6a;
@@ -779,7 +763,7 @@ input[type="checkbox"]:disabled ~ label::after {
 input[type="checkbox"]:disabled ~ label {
   color: #6a6a6a;
 }
-*/
+
 
 .filter-price-form {
   width: 330px;
@@ -846,7 +830,7 @@ input[type="checkbox"]:disabled ~ label {
 .price-controls input {
   width: 50px;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 28px;
   color: inherit;
   font: inherit;
   font-size: 14px;
@@ -867,8 +851,8 @@ input[type="checkbox"]:disabled ~ label {
   cursor: pointer;
 }
 
-.max-price {
-  padding-right: 4px;
+.price-controls label:last-child {
+  margin-left: 7px;
 }
 
 .range-controls {
@@ -976,18 +960,6 @@ input[type="checkbox"]:disabled ~ label {
   border: none;
   cursor: pointer;
   background-color: transparent;
-}
-
-.arrow-up:focus,
-.arrow-down:focus {
-  outline: none;
-}
-
-.arrow-up:focus,
-.arrow-up:active,
-.arrow-down:focus,
-.arrow-down:active {
-  border: 1px solid lightblue;
 }
 
 .arrow-up:hover path,
@@ -1163,8 +1135,8 @@ input[type="checkbox"]:disabled ~ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
-  padding-bottom: 37px;
+  padding-top: 0px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -1177,6 +1149,8 @@ input[type="checkbox"]:disabled ~ label {
   left: 0;
   right: 0;
   opacity: 0.9;
+  padding-top: 22px;
+  padding-bottom: 37px;
 }
 
 .visitsedona {
@@ -1197,7 +1171,7 @@ input[type="checkbox"]:disabled ~ label {
   justify-content: center;
   list-style: none;
   max-width: 33.33%;
-  padding-left: 33px;
+  padding-left: 4px;
 }
 
 .footer-social li {
@@ -1209,7 +1183,8 @@ input[type="checkbox"]:disabled ~ label {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
+  padding-left: 30px;
   list-style: none;
   width: 185px;
 }
@@ -1242,7 +1217,7 @@ input[type="checkbox"]:disabled ~ label {
 }
 
 .copyright {
-  margin-top: 9px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1252,7 +1227,7 @@ input[type="checkbox"]:disabled ~ label {
 .copyright span {
   font: inherit;
   color: #000000;
-  margin-right: 7px;
+  margin-right: 9px;
   margin-top: 7px;
 }
 
