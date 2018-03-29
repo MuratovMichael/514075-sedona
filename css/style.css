@@ -749,17 +749,6 @@ input[type="checkbox"]:checked ~ label::after {
   transform: rotate(-45deg);
 }
 
-
-input[type="checkbox"]:disabled ~ label:before,
-input[type="checkbox"]:disabled ~ label::after {
-  border-color: #6a6a6a;
-}
-
-input[type="checkbox"]:disabled ~ label {
-  color: #6a6a6a;
-}
-
-
 .filter-price-form {
   width: 330px;
   text-align: center;
@@ -1110,7 +1099,7 @@ input[type="checkbox"]:disabled ~ label {
 }
 
 .data-rating {
-  background-image: url(../img/star.svg);
+  background-image: url(../img/);
   background-repeat: repeat-x;
   padding-bottom: 50px;
   margin-left: auto;
