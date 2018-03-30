@@ -845,6 +845,10 @@ input[type="checkbox"]:focus + label {
   outline: rgb(59, 153, 252) auto 1px;
 }
 
+.input[type="checkbox"]:disabled + label:before,
+.input[type="checkbox"]:disabled + label:after {
+  border: 2px solid #669ec0;
+}
 
 .filter-price-form {
   width: 330px;
