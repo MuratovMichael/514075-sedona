@@ -186,6 +186,13 @@ span {
   list-style: none;
 }
 
+.advantages-service {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
 .advantages-item-housing {
   background-image: url(../img/advantages-icon-1.svg);
   background-repeat: no-repeat;
@@ -251,7 +258,7 @@ span {
 }
 
 .advantages-item {
-  width: 33.33%;
+  max-width: 400px;
   padding-top: 25px;
   padding-right: 63px;
   padding-bottom: 45px;
