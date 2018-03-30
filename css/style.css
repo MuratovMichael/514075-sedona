@@ -190,7 +190,6 @@ span {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 .advantages-item-housing {
@@ -258,7 +257,8 @@ span {
 }
 
 .advantages-item {
-  max-width: 400px;
+  width: 33.33%;
+  box-sizing: border-box;
   padding-top: 25px;
   padding-right: 63px;
   padding-bottom: 45px;
