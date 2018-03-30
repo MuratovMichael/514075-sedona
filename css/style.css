@@ -111,8 +111,8 @@ span {
   line-height: 56px;
 }
 
-.main-navigation li:nth-child(2) {
-  margin-right: auto;
+.main-navigation li:nth-child(4n+2) {
+  margin-right: 244px;
 }
 
 .main-navigation li:nth-child(3) {
@@ -123,8 +123,6 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -173,6 +171,7 @@ span {
 /* ADVANTAGES AND FEATURES */
 
 .advantages-list {
+  flex-wrap: wrap;
   margin-bottom: 55px;
 }
 
@@ -790,7 +789,7 @@ iframe {
 
 .filter-form input {
   font: inherit;
-  display: none;
+  opacity: 0;
 }
 
 .wrapper {
@@ -813,6 +812,7 @@ legend {
   cursor: pointer;
   color: #ffffff;
   padding-left: 40px;
+  margin-left: -13px;
 }
 
 .filter-form label::before {
@@ -826,7 +826,7 @@ legend {
   border-radius: 3px;
 }
 
-input[type="checkbox"]:checked ~ label::after {
+input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -840,6 +840,11 @@ input[type="checkbox"]:checked ~ label::after {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+input[type="checkbox"]:focus + label {
+  outline: rgb(59, 153, 252) auto 1px;
+}
+
 
 .filter-price-form {
   width: 330px;
