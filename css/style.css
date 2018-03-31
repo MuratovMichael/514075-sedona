@@ -32,7 +32,7 @@ body {
   text-align: center;
   color: #333333;
   margin-top: 60px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   padding-left: 290px;
   padding-right: 290px;
 }
@@ -72,12 +72,6 @@ span {
 
 .main-header {
   position: relative;
-  min-height: 564px;
-  background-color: #e0eef7;
-  background-image: url(../img/bg-header.jpg);
-  background-repeat: no-repeat;
-  background-position: center -27px;
-  background-size: cover;
 }
 
 .filter-header {
@@ -155,15 +149,21 @@ span {
 }
 
 .promo {
-  margin-top: 76px;
+  padding-top: 76px;
   text-align: center;
+  min-height: 431px;
+  background-color: #e0eef7;
+  background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center -83px;
+  background-size: cover;
 }
 
 .promo::after {
   content: "";
   position: absolute;
-  top: 507px;
   left: 0;
+  bottom: 0;
   width: 1200px;
   height: 57px;
   background-image: url(../img/shape.png);
