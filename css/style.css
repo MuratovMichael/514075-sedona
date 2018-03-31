@@ -193,8 +193,8 @@ span {
   flex-wrap: wrap;
 }
 
-.advantages-service:last-child {
-  background-color: red;
+.advantages-service-gray {
+  background-color: #eeeeee;
 }
 
 .advantages-item-housing {
