@@ -193,6 +193,10 @@ span {
   flex-wrap: wrap;
 }
 
+.advantages-service:last-child {
+  background-color: red;
+}
+
 .advantages-item-housing {
   background-image: url(../img/advantages-icon-1.svg);
   background-repeat: no-repeat;
@@ -277,9 +281,6 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .feature-item span,
